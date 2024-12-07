@@ -1,0 +1,459 @@
+$primary-color: #e67e22; 
+$background-color: #ffffff;
+$text-color: #333;
+$dark-background: #111;
+$hover-color: #ff6347;
+$box-shadow-color: rgba(0, 0, 0, 0.3);
+$card-shadow: rgba(0, 0, 0, 0.1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: $background-color; 
+}
+
+header {
+  background-color: $dark-background; 
+  padding: 10px 30px; 
+  box-shadow: 0 6px 12px $box-shadow-color;
+  position: relative;
+  z-index: 1000;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand-logo a {
+    display: flex;
+    align-items: center;
+
+    .logo-image {
+      width: auto; 
+      height: 44px; 
+      min-width: 44px; 
+      max-width: 100px; 
+      object-fit: contain; 
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin-left: 20px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          color: $hover-color;
+          transform: translateY(-3px);
+        }
+
+        padding: 10px 20px;
+        min-width: 44px; 
+        min-height: 44px; 
+        display: inline-block;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+button {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.5);
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: $dark-background;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.active {
+      transform: translateX(0);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
+
+.restaurant-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #34495e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $primary-color;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+}
+
+.restaurant-data {
+  width: 100%;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  background-color: $background-color;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; 
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .restaurant-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid $primary-color;
+  }
+
+  .restaurant-info {
+    flex-grow: 1; 
+    padding: 15px;
+    background-color: $background-color;
+    color: $text-color;
+    text-align: center;
+
+    p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+      color: #7f8c8d;
+    }
+
+    h3 {
+      margin: 10px 0;
+      font-size: 1.3rem;
+      color: #34495e;
+
+      &:hover {
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+
+    .special-offer {
+      background-color: $primary-color;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .special-offer::before {
+      content: "🎉 ";
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: $dark-background;
+  color: #fff;
+  box-shadow: 0 -6px 12px $box-shadow-color;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 2000; 
+  text-decoration: none;
+  font-size: 1rem;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.restaurant-detail {
+  padding: 20px;
+  text-align: left;
+  background-color: $background-color;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  .restaurant-detail-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $text-color;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: $primary-color;
+  }
+
+  ul {
+    margin-top: 10px;
+    padding-left: 20px;
+
+    li {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #7f8c8d;
+    }
+  }
+}
+
+.favorite-button {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.restaurant-detail p {
+  font-size: 1.1rem;
+  color: $text-color;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: $primary-color;
+}
+
+.review-form {
+  margin-top: 20px;
+
+  h3 {
+    font-size: 1.8rem;
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: $text-color;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+    }
+  }
+}
+
+.cta-detail {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 12px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $primary-color;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+  }
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: $text-color;
+  font-family: inherit;
+  min-height: 44px; // Menambahkan tinggi minimal
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+  }
+}
+

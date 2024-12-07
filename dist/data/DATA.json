@@ -1,0 +1,94 @@
+{
+  "restaurants": [
+    {
+      "id": "6c7bqjgi84kcowlqdz",
+      "name": "Bring Your Phone Cafe",
+      "description": "Bring Your Phone Cafe adalah kafe modern yang menyediakan suasana nyaman untuk bekerja dan bersantai sambil menikmati secangkir kopi dan beragam makanan ringan. Kafe ini dilengkapi dengan Wi-Fi cepat dan colokan listrik di setiap meja, cocok untuk freelancer dan mahasiswa.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/41",
+      "city": "Medan",
+      "rating": 4.6,
+      "testimonial": "Kafe ini sangat nyaman untuk bekerja. Kopinya enak dan Wi-Fi cepat!",
+      "specialOffer": "Diskon 10% untuk semua minuman setiap hari Senin!"
+    },
+    {
+      "id": "ljx8i0qu2uckcowlqdz",
+      "name": "Run The Gun",
+      "description": "Run The Gun menyajikan makanan cepat saji dengan cita rasa premium. Menu utamanya adalah burger dan hotdog dengan bahan-bahan segar dan saus buatan sendiri. Cocok untuk Anda yang ingin makan cepat tanpa mengorbankan kualitas.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/07",
+      "city": "Bali",
+      "rating": 4.6,
+      "testimonial": "Burgernya juicy dan penuh rasa, pasti akan kembali lagi!",
+      "specialOffer": "Beli 2 burger, gratis 1 hotdog setiap hari Jumat!"
+    },
+    {
+      "id": "fe8bbxoazddkcowlqdz",
+      "name": "Pangsit Express",
+      "description": "Pangsit Express adalah restoran khusus pangsit dengan berbagai pilihan pangsit goreng dan kuah. Dengan bumbu rahasia dan bahan berkualitas, Pangsit Express menjadi tempat favorit bagi pecinta makanan oriental.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/29",
+      "city": "Ternate",
+      "rating": 4.8,
+      "testimonial": "Pangsit gorengnya renyah dan lezat, sangat rekomendasi!",
+      "specialOffer": "Diskon 15% untuk semua menu pangsit di atas Rp 50.000!"
+    },
+    {
+      "id": "ik1zljmlf68kcowlqdz",
+      "name": "Ducky Duck",
+      "description": "Ducky Duck adalah restoran spesialis bebek panggang. Daging bebek yang empuk dengan kulit yang renyah disajikan bersama saus khas yang membuat setiap gigitan lebih nikmat.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/38",
+      "city": "Malang",
+      "rating": 4.7,
+      "testimonial": "Bebek panggang yang terbaik di kota! Rasa dan teksturnya sempurna.",
+      "specialOffer": "Gratis minuman untuk setiap pembelian menu bebek spesial!"
+    },
+    {
+      "id": "9jpuzkm6n6jkcowlqdz",
+      "name": "Kafein",
+      "description": "Kafein adalah kafe dengan suasana cozy dan tenang, cocok untuk bersantai atau bekerja. Menawarkan beragam jenis kopi dari biji lokal dengan metode seduh manual.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/40",
+      "city": "Bali",
+      "rating": 3.8,
+      "testimonial": "Tempat yang sempurna untuk menikmati kopi lokal. Suasananya juga tenang.",
+      "specialOffer": "Gratis kue kecil untuk setiap pembelian kopi spesial hari Senin!"
+    },
+    {
+      "id": "cpl5jpsnuqkkcowlqdz",
+      "name": "Makan Mudah",
+      "description": "Makan Mudah menyajikan berbagai makanan rumahan dengan rasa otentik. Mulai dari nasi goreng, ayam bakar, hingga soto, semua disiapkan dengan bahan segar setiap hari.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/08",
+      "city": "Malang",
+      "rating": 4.6,
+      "testimonial": "Sangat suka nasi gorengnya, rasanya seperti masakan rumah.",
+      "specialOffer": "Diskon 10% untuk semua menu di atas Rp 100.000!"
+    },
+    {
+      "id": "iqtf9hmdzvbkcowlqdz",
+      "name": "Saya Suka",
+      "description": "Saya Suka menawarkan berbagai makanan ringan dan minuman segar, cocok untuk cemilan sore hari. Menyajikan sandwich, salad, dan jus buah segar untuk pelanggan yang ingin makanan cepat namun sehat.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/32",
+      "city": "Surabaya",
+      "rating": 3.6,
+      "testimonial": "Pilihan makanan ringan yang sehat dan enak. Saya suka jusnya!",
+      "specialOffer": "Beli 2 jus, gratis 1 sandwich setiap hari Minggu!"
+    },
+    {
+      "id": "8i06gqcc2dpkcowlqdz",
+      "name": "Gigitan Cepat",
+      "description": "Gigitan Cepat adalah pilihan yang tepat untuk makan siang cepat dengan pilihan sandwich dan salad. Semua bahan disiapkan segar setiap hari.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/45",
+      "city": "Aceh",
+      "rating": 4,
+      "testimonial": "Pelayanan cepat dan sandwichnya enak. Cocok untuk makan siang.",
+      "specialOffer": "Gratis minuman dingin untuk setiap pembelian sandwich besar!"
+    },
+    {
+      "id": "wf5o19xhxxkcowlqdz",
+      "name": "Fairy Cafe",
+      "description": "Fairy Cafe menyajikan makanan manis dan minuman teh dengan suasana yang nyaman dan magis. Cocok untuk penggemar dessert yang ingin menikmati sore santai.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/04",
+      "city": "Malang",
+      "rating": 3.9,
+      "testimonial": "Dessertnya enak dan suasananya cozy, saya betah berlama-lama di sini.",
+      "specialOffer": "Diskon 20% untuk setiap pembelian dessert di atas Rp 50.000!"
+    }
+  ]
+}
